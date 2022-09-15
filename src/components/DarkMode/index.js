@@ -2,13 +2,15 @@ import { useState } from 'react';
 import './index.scss';
 
 const DarkMode = () => {
-  const [color, setColor] = useState(false);
+  const [toggle, setToggle] = useState(false);
   return (
+    <>
     <div className="DarkModeButton">
-      <button onClick={() => setColor(!color)}>DarkMode</button>
-      <div className = {color}></div>
+      <button className ={toggle?"dark test":"light test"} onClick={() => setToggle(!toggle)}>DarkMode</button>
     </div>
+    <div className ={toggle?"dark test":"light test"}></div>
+    </>
   );
 };
 
-export default DarkMode ;
+export default DarkMode;
