@@ -7,12 +7,22 @@
   z-index:3;
   min-width: 80px;
 }*/
-.nav-bar {
+/*.nav-bar {
   background: #181818;
   width: 60px;
   height: 100%;
   position: absolute;
   top: 0;
+  z-index: 3;
+  min-height: 500px;
+}*/
+
+.nav-bar {
+  background: #181818;
+  width : clamp(70px,70px, 15%);
+  height: 100%;
+  position: absolute;
+  right: 0;
   z-index: 3;
   min-height: 500px;
 }

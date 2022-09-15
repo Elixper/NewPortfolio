@@ -16,7 +16,7 @@
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
-
+    
     &::before {
       content: '<h1>';
       font-family: 'La Belle Aurore';
@@ -61,7 +61,7 @@
   }
 
   .flat-button {
-    color: #ffd700;
+    color: #ffa600;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 4px;
@@ -75,7 +75,7 @@
     white-space: nowrap;
   
     &:hover {
-      background: #ffd700;
+      background:#ffa600;
       color: #333;
       transition: ease-in-out 0.3s;
     }

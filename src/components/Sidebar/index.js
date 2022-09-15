@@ -5,6 +5,8 @@ import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHome, faUser, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import DarkMode from '../DarkMode';
+
 
 const Sidebar = () => (
   <div className="nav-bar">
@@ -13,6 +15,7 @@ const Sidebar = () => (
       <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
     </Link>
     <nav>
+      <DarkMode/>
       <NavLink exact="true" activeclassname="active" to="/">
         <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
       </NavLink>
