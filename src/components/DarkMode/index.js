@@ -1,3 +1,4 @@
+import ReactDOM from 'react-dom';
 import { useState } from 'react';
 import './index.scss';
 
@@ -9,6 +10,7 @@ const DarkMode = () => {
       <button className ={toggle?"dark test":"light test"} onClick={() => setToggle(!toggle)}>DarkMode</button>
     </div>
     <div className ={toggle?"dark test":"light test"}></div>
+    {/* {document.getElementById('root').getElementsByClassName} */}
     </>
   );
 };
